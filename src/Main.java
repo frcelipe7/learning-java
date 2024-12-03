@@ -15,14 +15,9 @@ public class Main {
         print("\nFilmes disponíveis:\n~ [1] Moana 2\n~ [2] Moana 3\n~ [3] Moana 4");
         System.out.println("\nFilme escolhido: \"Moana 2\"");
 
-        int anoDeLancamento = 2024;
-        print("Ano de lançamento: " + anoDeLancamento);
-
-        boolean incluidoNoPlano = true;
-
         System.out.println("\n");
         for (int i = 0; i <= 100; i++) {
-            System.out.print("\rCalculando... " + i + "%");
+            System.out.print("\rBuscando informações... " + i + "%");
             Thread.sleep(70);
 
             if (i == 37) {
@@ -33,6 +28,11 @@ public class Main {
                 Thread.sleep(2568);
             }
         }
-        System.out.print("\rProcesso finalizado!");
+        System.out.print("\rProcesso finalizado!\n________________\n");
+
+        int anoDeLancamento = 2024;
+        print("Ano de lançamento: " + anoDeLancamento);
+
+        boolean incluidoNoPlano = true;
     }
 }
